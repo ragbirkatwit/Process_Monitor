@@ -5,7 +5,7 @@ SRC = src/main.c src/cpu.c src/memory.c src/proc_parser.c src/ui.c
 OBJ = $(SRC:.c=.o)
 
 procmon: $(OBJ)
-    $(CC) $(OBJ) -o procmon
+	$(CC) $(OBJ) -o procmon
 
 clean:
-    rm -f $(OBJ) procmon
+	rm -f $(OBJ) procmon

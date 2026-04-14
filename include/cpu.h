@@ -1,3 +1,6 @@
+#ifndef CPU_H
+#define CPU_H
+
 struct cpu_stats {
     unsigned long long user;
     unsigned long long nice;
@@ -7,3 +10,7 @@ struct cpu_stats {
     unsigned long long irq;
     unsigned long long softirq;
 };
+
+int read_cpu_stats(struct cpu_stats *out);
+
+#endif
